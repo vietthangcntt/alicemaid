@@ -1,0 +1,518 @@
+/*
+Theme Name: Alicemaid
+Theme URI: https://wordpress.org/themes/alice/
+Author: TNT
+Autheor URI: TNT9x@gmail.com
+Description: 
+Version: 1.0
+Tags: Alice, aliceman, wordpress
+Textdomain: alicemaid
+*/
+.nav-menu ul li {
+	display: inline-block;
+}
+.menu-nav {
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 75px 0;
+}
+.menu-nav h1{
+	font-family: "Montserrat";
+	font-size: 30px;
+	color: #fff;
+}
+.home-item {
+	font-size: 14px;
+	list-style: none;
+
+}
+.home-item+.home-item::before {
+	display: inline-block;
+    padding-right: .5rem;
+    margin-left: .5rem;
+    color: #6c757d;
+    content: "";
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent white;
+}
+.home-item  a {
+	font-family: "Lato";
+	font-size: 14px;
+	color: #fff;
+}
+.active{
+	text-decoration: line-through;
+}
+#main-section .post-thumbnail img{
+	width: 100%;
+}
+
+
+h1{
+	font-size:30px;
+	color: #36392e;
+	font-family: "Montserrat";
+}
+header{
+	height: 350px;
+	background-image: url("images/header.png");
+	margin-bottom: 100px ;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.header{
+	height: 114px;
+	background-color: #fff;
+
+}
+.logo{
+	float: left;
+	margin-top: 38px;
+	width: 20%;
+}
+.main-menu{
+	float: left;
+	width: 80%;
+}
+.icon{
+	display: none;
+}
+nav{
+	float: left;
+	width: 85%;
+	margin-top: 45px;
+	text-align: right;
+}
+.primary-menu ul{
+	list-style-type: none;
+}
+.primary-menu ul li{
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+	padding-left: 20px;
+}
+nav ul li a{
+	color: #36392e;
+}
+.search{
+	float: right;
+	width: 15%;
+    text-align: right;
+    margin-top: 35px;
+}
+.search ul{
+	padding-left: 0;
+}
+.search ul li{
+	display: inline;
+	padding: 0;
+}
+.search button{
+	background-color: #fff;
+    border: none;
+    font-size: 24px;
+    color: #36392e;
+}
+.search a{
+	color: #36392e;
+    font-size: 24px;
+}
+.search a sup{
+	top: -1.2em;
+    left: -1em;
+    font-size: 10px;
+    color: white;
+    background-color: #238ee1;
+    padding: 1px 5px;
+    border-radius: 25%;
+}
+.entry-header{
+	margin: 25px 0;
+}
+.entry-header h1{
+	font-size: 16px;
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+.entry-header h1 a{
+	color: #36392e;
+}
+.entry-header .meta span, .entry-content{
+	color: #999999;
+	font-family: "Lato";
+	font-size: 14px;
+	
+}
+.entry-header .meta span{
+	font-style: italic;
+	padding-right: 25px;
+}
+.entry-header .meta a{
+	color: #999;
+}
+.read{
+	border: 2px solid #dcdcdc;
+    width: 25%;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 30px 0 50px 0;
+}
+.read a{
+	font-family: "Montserrat";
+	font-weight: bold;
+	color: #999;
+}
+/*Footer CSS*/
+footer{
+	background-image: url("images/bg-footer.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 541px;
+}
+footer .widget{
+	float: left;
+	width: 25%;
+}
+footer .widget h2{
+	font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+	font-family: "Montserrat";
+
+}
+.widget{
+	list-style: none;
+}
+#custom_html-3,#custom_html-2,#custom_html-4,#custom_html-5{
+	
+	margin:85px 0 70px 0;
+}
+.textwidget{
+	color: #999;
+	font-family: "Lato";
+	font-size: 14px;
+}
+#custom_html-3 .textwidget{
+	width: 83%;
+}
+.p1{
+	padding-bottom: 15px;
+}
+#custom_html-4 .textwidget{
+	width: 75%;
+}
+.logo_footer{
+	margin-bottom: 30px;
+}
+#custom_html-3 .textwidget,#custom_html-4 .textwidget,#custom_html-5 .textwidget{
+	margin-top: 30px;
+}
+.textwidget ul{
+	padding: 0;
+	list-style-type: none;
+}
+.textwidget ul li{
+	padding-bottom:9px;
+}
+.textwidget ul li a{
+	color: #999;
+}
+footer .textwidget ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.footer_side{
+	height: 422px;
+}
+footer .footer-down {
+	height: 118px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+.footer-down ul{
+	list-style-type: none;
+	padding-top: 35px;
+    margin-bottom: 5px;
+}
+.footer-down ul li{
+	display: inline;
+	    padding: 0 15px;
+}
+.footer-down ul li a {
+	color: #fff;
+}
+.footer-down span i {
+	color: #fff;
+}
+.copyright {
+	color: #999999;
+}
+.copyright span i{
+	color: #238ee1;
+}
+/*Sidebar CSS*/
+#sidebar h2{
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: #303030;
+	font-weight: bold;
+}
+#contact ul,#social ul, #categories-5 ul,#main-section .single ul{
+	list-style-type: none;
+}
+#sidebar .widgettitle:before{
+	content: url("image/3.png");
+	padding-right: 10px;
+}
+#categories-5 ul{
+	padding-left: 0;
+}
+#categories-5 ul li a{
+	color: #999;
+}
+.cat-item:before, .textwidget ul li:before {
+	
+	padding-right: 10px;
+	color: #999;
+
+}
+.cat-item:before{
+	content: "\2013";
+}
+.textwidget ul li:before{
+	content: "\2014";
+}
+/*Single*/
+.single {
+	color: #36392e;
+	font-family: "Lato";
+}
+blockquote{
+	border-left: 3px solid #238ee1;
+	padding-left: 15px;
+	font-size: 18px;
+	font-style: italic;
+	font-family: "Lato";
+	color: #999;
+	margin: 30px 0!important;
+
+}
+#main-section .single ul{
+	padding-left: 60px;
+}
+#main-section .single ul li{
+	padding: 10px 0;
+}
+#main-section .single ul li:before{
+	content:"";
+	width: 4px;
+	height: 4px;
+	background-color: #238ee1;
+	display: inline-block;
+	margin-right: 15px;
+    margin-bottom: 3px;
+}
+#respond td input{
+	width: 100%;
+}
+.tag a{
+	color: #999;
+	font-size: 14px;
+	font-family: "Lato";
+}
+
+#contact ul li{
+	display: inline;
+	padding-left: 10px;
+}
+.line{
+	height: 40px;
+	margin: 40px 0 50px 0;
+
+}
+.line .tag{
+	float: left;
+	width: 50%;
+}
+#contact{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+#contact a{
+	color: #999;
+}
+.author-info{
+	padding: 40px 0;
+	border-top: 1px solid #aeaeae;
+	border-bottom: 1px solid #aeaeae;
+	height: 180px;
+}
+.author-info .avatar{
+	float: left;
+	width: 80px;
+    height: 80px;
+
+}
+.avatar img{
+	border-radius: 50%;
+}
+.author-info .info{
+	float: left;
+	width: 89%;
+	padding-left: 40px;
+}
+#social ul li{
+	display: inline;
+	padding-left: 10px;
+}
+#social ul li a{
+	color: #999;
+}
+.author-name{
+	float: left;
+}
+.author-name a{
+	font-size: 14px;
+	font-family: "Montserrat";
+	font-weight: bold;
+	color: #000;
+}
+#social{
+	float: right;
+}
+.info p{
+	clear: both;
+	font-family: "Lato";
+	font-size: 14px;
+	color: #999;
+}
+.title{
+	padding-top: 10px;
+}
+#comments h2{
+	font-size: 16px;
+	font-family: "Montserrat";
+	font-weight: 600;
+}
+#comments{
+	margin-top: 50px;
+	border-bottom: 1px solid #aeaeae;
+}
+#comments,#comments ul{
+	list-style-type: none;
+
+}
+.comment-author img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%
+}
+.author i {
+	margin-right: 5px;
+}
+.comment-author cite{
+	    padding-left: 20px;
+
+}
+.comment-author .says, .comment-body .reply{
+	display: none;
+}
+#comments .comment{
+	margin-top: 30px;
+}
+.comment-author cite{
+	font-style: normal;
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 500;
+}
+#comments p{
+	font-size: 14px;
+	font-family: "Lato";
+}
+.comment-meta a{
+	font-style: italic;
+	color: #999;
+	font-family: "Lato";
+	font-size: 12px;
+}
+.comment-meta{
+	 margin-left: 91px;
+    margin-top: -30px;
+}
+.comment p{
+	margin-top: 25px;
+	margin-left: 91px;
+}
+#respond{
+	margin-top: 50px;
+}
+#respond h2{
+	font-family: "Montserrat";
+	font-size: 16px;
+}
+#respond form{
+	 margin-top: 25px;
+}
+#respond input{
+	margin-bottom: 20px;
+	height: 36px;
+	border: 1px solid #aeaeae
+}
+#respond textarea{
+	margin: 10px 0 30px 0;
+	width: 100%;
+
+}
+#respond label{
+	font-family: "Montserrat";
+	font-size: 14px;
+	color: #999;
+	padding-right: 50px;
+	font-weight: 500;
+}
+#respond button{
+	border: 2px solid #dcdcdc;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 0 50px 0;
+    background-color: #fff;
+    color: #999;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+.comment-body{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #ededed;
+}
+.date i {
+	margin-right: 5px;
+}
+.text {
+	margin: 20px 0;
+    padding: 0 15px 0px 0;
+    font-size: 14px;
+    color: #999999;
+    font-family: lato;
+    font-weight: 400;
+}
+#sidebar li ul li a {
+	color: #999999;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: lato;
+}
+#sidebar li ul li {
+	list-style: none;
+}
+#sidebar li ul {
+	padding: 0 10px;
+}
