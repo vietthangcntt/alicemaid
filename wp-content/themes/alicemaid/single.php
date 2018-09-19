@@ -10,8 +10,8 @@
 							<?php get_template_part('content',get_post_format()); ?>
 							<?php global $withcomments; $withcomments = 1; ?>
 							<div class="line">								
-								<?php entry_tag() ?>
-								<?php contact() ?>	
+								<?php alicemaid_entry_tag() ?>
+								<?php alicemaid_contact() ?>	
 							</div>
 							<?php get_template_part( 'author-bio' ); ?>
 							<?php comments_template('/comment.php'); ?>

@@ -3,10 +3,10 @@
                 <?php alice_thumbnail( 'large' ); ?>
     </div>
     <div class="entry-header">
-                <?php entry_header() ?>
-                <?php meta() ?>
+                <?php alicemaid_entry_header() ?>
+                <?php alicemaid_meta() ?>
     </div>
     <div class="entry-content <?php echo(is_single() ? 'single' : '') ?>">
-                <?php entry_content() ?>
+                <?php alicemaid_entry_content() ?>
     </div>
 </article>

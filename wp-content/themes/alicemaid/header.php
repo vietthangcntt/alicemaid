@@ -14,6 +14,9 @@
             <div class="header">
                 <div class="container">
                     <?php alicemaid_logo(); ?>
+                    <div class="icon">
+                        <i class="fa fa-align-justify"></i>
+                    </div>
                     <div class="main-menu" id="navbar">                     
                         <?php alicemaid_menu('primary-menu'); ?>
                         <div class="search primary-menu">

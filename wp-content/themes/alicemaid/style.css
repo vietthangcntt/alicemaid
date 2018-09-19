@@ -12,11 +12,14 @@ Textdomain: alicemaid
 	display: inline-block;
 }
 .menu-nav {
-	-webkit-background-size: cover;
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	padding: 75px 0;
+	background-image: url("images/header.png");
+	margin-bottom: 100px ;
+	background-size: cover;
+	clear: both;
 }
 .menu-nav h1{
 	font-family: "Montserrat";
@@ -57,20 +60,14 @@ h1{
 	font-family: "Montserrat";
 }
 header{
-	height: 350px;
-	background-image: url("images/header.png");
-	margin-bottom: 100px ;
-	-webkit-background-size: cover;
-	background-size: cover;
 }
 .header{
-	height: 114px;
 	background-color: #fff;
 
 }
 .logo{
 	float: left;
-	margin-top: 38px;
+	padding: 30px 0;
 	width: 20%;
 }
 .main-menu{
@@ -83,7 +80,7 @@ header{
 nav{
 	float: left;
 	width: 85%;
-	margin-top: 45px;
+    padding: 30px 0 10px 0;
 	text-align: right;
 }
 .primary-menu ul{
@@ -103,7 +100,7 @@ nav ul li a{
 	float: right;
 	width: 15%;
     text-align: right;
-    margin-top: 35px;
+    padding: 15px 0 0 0;
 }
 .search ul{
 	padding-left: 0;
@@ -113,7 +110,7 @@ nav ul li a{
 	padding: 0;
 }
 .search button{
-	background-color: #fff;
+	background-color: transparent;
     border: none;
     font-size: 24px;
     color: #36392e;
@@ -173,7 +170,6 @@ footer{
 	background-image: url("images/bg-footer.png");
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 541px;
 }
 footer .widget{
 	float: left;
@@ -227,11 +223,7 @@ footer .textwidget ul li a:hover{
 	color: #fff;
 	text-decoration: none;
 }
-.footer_side{
-	height: 422px;
-}
-footer .footer-down {
-	height: 118px;
+.footer-down {
 	background-color: rgba(0,0,0,0.5);
 	text-align: center;
 }
@@ -267,7 +259,6 @@ footer .footer-down {
 	list-style-type: none;
 }
 #sidebar .widgettitle:before{
-	content: url("image/3.png");
 	padding-right: 10px;
 }
 #categories-5 ul{
@@ -457,6 +448,7 @@ blockquote{
 #respond h2{
 	font-family: "Montserrat";
 	font-size: 16px;
+	font-weight: bold;
 }
 #respond form{
 	 margin-top: 25px;

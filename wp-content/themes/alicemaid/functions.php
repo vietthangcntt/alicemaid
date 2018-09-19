@@ -27,8 +27,8 @@
   /**
   @ Thiết lập các chức năng sẽ được theme hỗ trợ
   **/
-  if (!function_exists('setAlice')) {
-    function setAlice()
+  if (!function_exists('alicemaid')) {
+    function alicemaid()
     {
       load_theme_textdomain( 'alice' );
 
@@ -80,13 +80,13 @@
             ];
       register_sidebar($sidebar_footer);
     }
-    add_action('init','setAlice');
+    add_action('init','alicemaid');
   }
   if (! function_exists('alicemaid_logo')) {
     function alicemaid_logo()
     {?>
       <div class="logo">
-        <img src="<?php echo get_template_directory_uri().'/images/logo.png'; ?>" alt="Logo">
+        <a href="http://localhost/alice_blog/"><img src="<?php echo get_template_directory_uri().'/images/logo.png'; ?>" alt="Logo"></a>
       </div>
       
     <?php }
@@ -95,7 +95,7 @@
 @ Thiết lập hàm hiển thị shop
 @ alicemaid_logo()
 **/
-if ( ! function_exists( 'shop_car' ) ) {
+if ( ! function_exists( 'alicemaid_car' ) ) {
   function alicemaid_car() {?>
     <div class="shop">
       <a href="#"><img src="<?php echo get_stylesheet_directory_uri()?>/images/shop.png" alt="My icon"></a>
@@ -187,8 +187,8 @@ if ( ! function_exists( 'shop_car' ) ) {
 @ Còn ở trang chủ và trang lưu trữ, nó sẽ là thẻ <h2>
 @ alicemaid_entry_header()
 **/
-  if ( ! function_exists( 'entry_header' ) ) {
-    function entry_header() {?>
+  if ( ! function_exists( 'alicemaid_entry_header' ) ) {
+    function alicemaid_entry_header() {?>
       <h1 class="entry-title">
         <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
           <?php the_title(); ?>
@@ -201,8 +201,8 @@ if ( ! function_exists( 'shop_car' ) ) {
 @ Hàm hiển thị thông tin của post (Post Meta)
 @ alicemaid_entry_meta()
 **/
-  if (!function_exists("meta")) {
-    function meta(){
+  if (!function_exists("alicemaid_meta")) {
+    function alicemaid_meta(){
       if (is_home()) {
         echo '<div class="meta">';
           printf(__('<span class="author"> <i class="fa fa-user" aria-hidden="true"></i>  %1$s</span>','alice'),get_the_author());
@@ -242,7 +242,7 @@ if ( ! function_exists( 'shop_car' ) ) {
   @ alicemaid_entry_content()
   **/
   if ( ! function_exists( 'entry_content' ) ) {
-    function entry_content() {
+    function alicemaid_entry_content() {
       if ( ! is_single() ) :
         the_excerpt();
       else :
@@ -255,8 +255,8 @@ if ( ! function_exists( 'shop_car' ) ) {
 @ Hàm hiển thị tag của post
 @ alicemaid_entry_tag()
 **/
-  if (!function_exists('entry_tag')) {
-    function entry_tag(){
+  if (!function_exists('alicemaid_entry_tag')) {
+    function alicemaid_entry_tag(){
       if (has_tag() && is_single()) {
         echo '<div class="tag">';
         printf('Tags: %1$s',get_the_tag_list('',' , '));
@@ -264,7 +264,7 @@ if ( ! function_exists( 'shop_car' ) ) {
       }
     }
   }
-  function contact(){ ?>
+  function alicemaid_contact(){ ?>
     <div id="contact">
       <ul>
         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
@@ -285,6 +285,14 @@ function alicemaid_styles() {
   wp_enqueue_style('font-awesome');
   wp_register_style('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css','all');
   wp_enqueue_style('bootstrap-js');
+  wp_register_script('js', get_template_directory_uri().'/js/menu.js',array('jquery'));
+  wp_enqueue_script('js');
+  wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',array('jquery'));
+  wp_enqueue_script('jquery');
+  wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js','all');
+  wp_enqueue_style('bootstrap');
+  wp_register_style('responsive',get_template_directory_uri().'/css/responsive.css','all');
+  wp_enqueue_style('responsive');
 }
 add_action( 'wp_enqueue_scripts', 'alicemaid_styles' );
   
